@@ -27,7 +27,7 @@ body::before {
       rgba(58, 58, 158, 0.8),
       rgba(136, 136, 206, 0.7)
     ),
-    url("./assets/images/background.jpg");
+    url("../assets/images/background.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -61,16 +61,7 @@ a:hover {
   width: 100%;
   margin: 3rem auto 5rem auto;
 }
-@media (min-width: 700px) {
-  .container {
-    width: 50vw;
-  }
-  button {
-    margin-left: 25%;
-    margin-right: 25%;
-    max-width: 50%;
-  }
-}
+
 /***********container***********************/
 
 h1,
@@ -174,4 +165,33 @@ footer {
 }
 footer p {
   font-size: 0.8rem;
+}
+
+/************media queries******************************/
+@media (min-width: 700px) {
+  .container {
+    width: 70vw;
+  }
+  textarea {
+    margin-bottom: 2rem;
+  }
+  button {
+    margin-left: 25%;
+    margin-right: 25%;
+    max-width: 50%;
+    margin-bottom: 0.8rem;
+    height: 7vh;
+  }
+  .input-label {
+    padding: 1rem 0.5rem;
+  }
+  label {
+    padding: 0.2rem 0.5rem;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .container {
+    width: 40vw;
+  }
 }

@@ -13,7 +13,7 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./app.css" />
+    <link rel="stylesheet" href="./scss/index.scss" />
     <title>Survey-form</title>
   </head>
   <body>
@@ -26,7 +26,7 @@
       </header>
       <form action="" id="survey-form">
         <div class="form-group">
-          <label for="name" id="name-label">Name</label>
+          <label for="name" id="name-label" class="input-label">Name</label>
           <input
             type="text"
             name=""
@@ -37,7 +37,7 @@
           />
         </div>
         <div class="form-group">
-          <label for="email" id="email-label">E-mail</label>
+          <label for="email" id="email-label" class="input-label">E-mail</label>
           <input
             type="email"
             name=""
@@ -48,7 +48,7 @@
           />
         </div>
         <div class="form-group">
-          <label for="number" id="number-label">Age</label>
+          <label for="number" id="number-label" class="input-label">Age</label>
           <input
             type="number"
             name="number"
@@ -60,7 +60,9 @@
           />
         </div>
         <div class="form-group">
-          <label for="dropdown">How did you knew our service</label>
+          <label for="dropdown" class="input-label"
+            >How did you knew our service</label
+          >
           <select name="" id="dropdown" class="form-control">
             <option value="default">choose an option</option>
             <option value="by-friends">By friends</option>
@@ -157,7 +159,9 @@
           >
         </div>
         <div class="form-group">
-          <label for="comment">Do you have any comment?</label>
+          <label for="comment" class="input-label"
+            >Do you have any comment?</label
+          >
           <textarea
             name=""
             id="comment"
@@ -169,7 +173,7 @@
         <button type="submit" id="submit">Submit</button>
       </form>
       <footer>
-        <p>copyright &copy 2020 &nbsp;</p>
+        <p>copyright &copy; 2020 &nbsp;</p>
         <p>
           Photo by
           <a
